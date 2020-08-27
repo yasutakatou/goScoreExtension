@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task Extension</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<style type="text/css" media="screen">
+		body {
+			min-width: 350px;
+			background: #dbe2e8;
+		}
+
+		html {
+			display: table;
+			margin: auto;
+		}
+
+		/* Remove margins and padding from the list */
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		/* Style the list items */
+		ul li {
+			cursor: pointer;
+			position: relative;
+			margin: 1px 1px 1px 1px;
+			padding: 12px 16px 12px 20px;
+			list-style-type: none;
+			background: #fff;
+			font-size: 8px;
+			transition: 0.2s;
+
+
+			/* make the list items unselectable */
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		/* !* Set all odd list items to a different color (zebra-stripes) *!
+		ul li:nth-child(odd) {
+			background: #ee3b3d;
+		}
+*/
+		/* Darker background-color on hover */
+		ul li:hover {
+			background: #007bff;
+			color:#fff;
+		}
+
+		/* When clicked on, add a background color and strike out text */
+		ul li.checked {
+			background: #464788;
+			color: #fff;
+			text-decoration: line-through;
+		}
+
+		/* Add a "checked" mark when clicked on */
+		ul li.checked::before {
+			content: '';
+			position: absolute;
+			border-color: #fff;
+			border-style: solid;
+			border-width: 0 2px 2px 0;
+			top: 10px;
+			left: 16px;
+			transform: rotate(45deg);
+			height: 15px;
+			width: 7px;
+		}
+
+		/* Style the close button */
+		.close {
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding: 12px 16px 12px 16px;
+		}
+
+		.close:hover {
+			background-color: #f44336;
+			color: white;
+		}
+
+		.close1 {
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding: 12px 16px 12px 16px;
+		}
+
+		.close1:hover {
+			background-color: #f44336;
+			color: white;
+		}
+		/* Style the header */
+
+		/* Style the input */
+		input {
+			background: #eaf0ff;
+			border: none;
+			width: 10%;
+			font-size: 8px;
+			color:#fff;
+		}
+
+		/* Style the "Add" button */
+		.addBtn {
+			padding: 5px;
+			width: 25%;
+			background: #007bff;
+			color: #f8f8f8;
+			float: left;
+			border: none;
+			text-align: center;
+			font-size: 8px;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		.addBtn:hover {
+			background-color: #bbb;
+		}
+	</style>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="popup.js"></script>
+</head>
+<body>
+<div id="addTaskDiv" class="header input-group mb-3">
+	<input class="form-control" type="text" id="taskInput" placeholder=" ">
+	<input type="submit" id="addButtonTask"  class="addBtn" value="Add Endpoint">
+</div>
+<ul id="todo-listUl" class="list-group"></ul>
+<script src="bootstrap.bundle.js"></script>
+</body>
+</html>
