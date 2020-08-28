@@ -69,6 +69,19 @@ If you click center link, **go to original URL**.<br>
 
 note) **if url cached, server return old result**. So, it's fast.<br>
 
+# problem
+
+- When add server to extension, following message displaying!
+
+*YYYY/MM/DD HH:MM:SS http: TLS handshake error from XXX.XXX.XXX.XXX:XXXXX: remote error: tls: unknown certificate*
+
+If you use **Self-signed cert file**, Chrome must trusted this cert.<br>
+You have to access endpoint once by **manualy**.<br>
+
+## browse url to https://xxx.xxx.xxx.xxx:yyyyy/token
+
+If alert from Chrome and you continue access, message will not displayed.<br>
+
 # FYI (many thanks!)
 
  - A simple Chrome extension that replaces your new tab page with the to-do list of the day along with your to-learn checklist<br>
