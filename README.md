@@ -34,6 +34,10 @@ use app uninstall method on **Chrome extension**.
 
 # usecase
 
+## 0. prepare Cert file
+
+### You prepare cert file beforehand. (use mkcert and such more)
+
 ## 1. prepare server
 
 - run server and **space or enter press** will display **ip addres and port**.
