@@ -1,4 +1,4 @@
-# goScore
+# goScore (Chrome Extension)
 
 **Simple URL's security score check tool. (implement by Golang and Chrome Extension.)**.
 
